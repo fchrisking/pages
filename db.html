@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<!-- Bootstrap prefetch-->
+	<link rel='stylesheet prefetch' href='https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0-beta.2/css/bootstrap.min.css'>
+	
+	<!-- Meta tags - Include refresh for the page if reloading sections is not possible -->
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<meta name="author" content="F. Christopher King">
+	<meta name="description" content="Common house calendar">
+	<meta name="keywords" content="iframes, calendar, weather, sharing">
+	
+	<!-- Procedural shit -->
+	<title>Family Calendar - If it's not here it doesn't exist!</title>
+	
+	<!-- Script section - jQuery then popper.js then bootstrap(optional) -->
+	<script src='https://code.jquery.com/jquery-3.2.1.slim.min.js'></script>
+	<script src='https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.3/umd/popper.min.js'></script>
+	<script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0-beta.2/js/bootstrap.min.js"></script>
+	
+	<!-- CSS style section -->
+	<link href="https://fonts.googleapis.com/css?family=Changa" rel="stylesheet" type="text/css">
+	<link href="https://fonts.googleapis.com/css?family=BenchNine" rel="stylesheet" type="text/css">
+	
+	<!-- End HEAD section -->
+	</head>
+	
+<body>
+	
+	<!-- Container should be dynamic and have single column for <800px -->
+	<!-- Anything more should be 2 column. Calendar and weather should -->
+	<!-- have minimum widths regardless of device. -->
+	<!-- Note: Acer tab is A700, 1920x1200 16:10 aspect -->
+	<h1 style="font-family:Changa; text-align:center;">120 Pamela Dashboard</h1>
+	<div class="container-fluid">
+		<div class="row">
+			<div class="col-xl-7">
+				<iframe src="https://calendar.google.com/calendar/b/5/embed?showTitle=0&amp;showPrint=0&amp;showCalendars=0&amp;showTz=0&amp;mode=WEEK&amp;height=900&amp;wkst=1&amp;bgcolor=%23FFFFFF&amp;src=qpj2vqrrruhh542n29vu9hef44%40group.calendar.google.com&amp;color=%232F6309&amp;src=deejayopm%40gmail.com&amp;color=%23060D5E&amp;src=dloisvision%40gmail.com&amp;color=%23A32929&amp;src=en.usa%23holiday%40group.v.calendar.google.com&amp;color=%235A6986&amp;src=1a7ajt8n2grf9qn8e5cdun04v8pehjde%40import.calendar.google.com&amp;color=%23125A12&amp;src=izzious%40gmail.com&amp;color=%23B1440E&amp;src=jovanda.riley.jr%40gmail.com&amp;color=%23AB8B00&amp;ctz=America%2FChicago" style="border:solid 3px #777" width="100%" height="600" frameborder="0" scrolling="no"></iframe>
+			</div>
+			<div class="col-xl-5" style="color:white; background-color:black; text-align:left; font-family:BenchNine; font-size:22px;">
+				<p>This page shows the collective schedules of 120 Pamela Drive.  If it is not on the calendar, it doesn't exist.  Make sure that the items you put on your calendar show up here. If not, go back to your computer and check your event to see if it's public or private. The colors below are for each person so that you are easy to find.  Below this area is a whiteboard for notes.  Scroll down and use the stylus or your finger to leave a message.</p>
+			
+				<p style="margin-bottom:10px; background-color:rgb(48,72,126); text-align:center;">Chris</p>
+				<p style="margin-bottom:10px; background-color:rgb(135,17,17); text-align:center;">Deborah</p>
+				<p style="margin-bottom:10px; background-color:rgb(112,35,127); text-align:center;">Joseph</p>
+				<p style="margin-bottom:10px; background-color:rgb(157,112,0); text-align:center;">Jovanda</p>
+				<p style="margin-bottom:10px; background-color:rgb(31,117,60); text-align:center;">BHS Calendar</p>
+				<p style="margin-bottom:10px; background-color:rgb(129,145,11); text-align:center;">Band Events</p>
+				<p style="margin-bottom:10px; background-color:rgb(34,170,153); text-align:center;">Holidays</p>
+			</div>
+		</div>
+		<div class="row">
+			<div class="col-xl-4">
+				<iframe id="iWeather" height="350" width="100%" src="https://forecast.io/embed/#lat=41.7181&lon=-88.0678&name=Bolingbrook IL">
+				</iframe>
+			</div>
+			<div class="col-xl-8">
+				<iframe id="Whiteboard" height="350" width="100%">
+					<script src="https://awwapp.com/static/widget/js/aww.min.js">
+					</script>
+					<script type="text/javascript">
+						var aww = new AwwBoard('#aww-wrapper', {
+						});
+					</script>
+				</iframe>
+			</div>
+		</div>		
+	</div>
+</body>
+</html>
+	
+	
